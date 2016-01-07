@@ -1,0 +1,137 @@
+nav{
+	height: 80px;
+}
+.menu{
+	 list-style-type: none;
+}
+
+.menu li{
+	 height: 100%;
+	 background: blue;
+}
+
+#categorie-maison article{
+	display: inline-block;
+	background-color: grey;
+	margin: 10px 0;
+	width: 100%;
+}
+
+#categorie-maison article:nth-child(2n) img{
+  float: right;
+}
+
+#categorie-maison article{
+	display: inline-block;
+	background-color: grey;
+	margin: 10px 0;
+	width: 100%;
+}
+
+#categorie-maison article h2{
+    display: inherit;
+    float: right;
+}
+
+#categorie-maison article:nth-child(2n) h2{
+  float: left;
+}
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  position: relative;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+div h1{
+	text-align: center;
+}
+
+.row > div > div:nth-child(2n){
+  background-color: red;
+  height: 100%;
+}
+.row > div > div:nth-child(2n+1){
+  background-color: yellow;
+  height: 100%;
+}
+
+
+footer{
+	height: 500px;
+	background-color: blue;
+}
+
+.nivo-caption{
+	height: 20%;
+	background: #000;
+}
+
+.nivo-caption::before{
+	margin: 100px 100px;
+	padding: 100px 100px;
+}
+
+.nivo-controlNav{
+	display: none;
+}
