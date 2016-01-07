@@ -1,5 +1,7 @@
 <h1>Thème Wordpress Maison-Vacances</h1>
 
+[[https://github.com/Digital_design/Maison-Vacances/blob/master/img/maquette.png|alt=maquette]]
+
 <h2>Installation</h2>
 
 Faire une install clean de wordpress et clone le dépôt dans le dossier <code>wp-content/themes</code> et sélectionné le sur l'interface d'administration.
