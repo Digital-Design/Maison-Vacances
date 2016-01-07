@@ -13,7 +13,7 @@ Modules obligatoires :
 <ul>
   <li>Google analytics</li>
   <li>Contact Form 7</li>
-  <li>Slider</li>
+  <li>Meta Slider</li>
   <li>WP Google Map</li>
   <li>Booking Calendar</li>
 </ul>
