@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part( 'navigation', 'default' ); ?>
-<?php echo do_shortcode("[metaslider id=4]"); ?>
+<?php echo do_shortcode("[metaslider id=14]"); ?>
 
 <div class="container main-container">
   <div class="row">
@@ -34,7 +34,7 @@
       <?php endif; ?>
       <div id="contact">
         <h1>Nous contacter</h1>
-       <?php echo do_shortcode("[contact-form-7 id=38 title=Formulaire de contact 1]"); ?>
+       <?php echo do_shortcode("[contact-form-7 id=6 title=Formulaire de contact 1]"); ?>
      </div>
    </div>
  </div>
