@@ -1,6 +1,6 @@
 <h1>Thème Wordpress Maison-Vacances</h1>
 
-[[https://github.com/Digital_design/Maison-Vacances/blob/master/img/maquette.png|alt=maquette]]
+[[https://github.com/Digital-Design/Maison-Vacances/blob/master/screenshot.png|alt=screenshot]]
 
 <h2>Installation</h2>
 
