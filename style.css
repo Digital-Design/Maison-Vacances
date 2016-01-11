@@ -114,6 +114,7 @@ footer{
 }
 footer ul{
   float: right;
+  list-style-type:none;
 }
 footer ul li a{
   text-decoration: none;
