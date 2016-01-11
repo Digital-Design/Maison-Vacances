@@ -1,9 +1,12 @@
 			</div>
-			<?php echo do_shortcode("[wpgmza id=1]"); ?>
-			<footer>
-				test
+			<footer class="footer">
+				<div class="container">
+				<ul>
+					<li><a>Réalisé par Digital Design</a></li>
+				</ul>
+				</div>
 			</footer>
 		</div>
-	<?php wp_footer(); ?>
+		<?php wp_footer(); ?>
 	</body>
-</html>
+	</html>

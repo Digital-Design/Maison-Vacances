@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-faded">
+<nav class="navbar navbar-light bg-faded navbar-fixed-top">
   <ul class="nav navbar-nav">
     <?php
     $menu = wp_get_nav_menu_items('Menu Nav');

@@ -36,6 +36,8 @@
         <h1>Nous contacter</h1>
        <?php echo do_shortcode("[contact-form-7 id=6 title=Formulaire de contact 1]"); ?>
      </div>
+          <?php echo do_shortcode("[wpgmza id=1]"); ?>
+
    </div>
  </div>
 </div>
