@@ -19,12 +19,20 @@ h1 {
 	font-family: 'Nexa Rust Script', Arial;
 }
 
-h1.fond-bleu {
-	color: #3196DF;
+.fond-bleu {
+	background-color: #3196DF;
 }
 
-h1.fond-blanc {
+.fond-blanc {
+	background-color: #fff;
+}
+
+.fond-bleu h1 {
 	color: #fff;
+}
+
+.fond-blanc h1 {
+	color: #3196DF;
 }
 
 /* --------------------- Nav --------------------- */
