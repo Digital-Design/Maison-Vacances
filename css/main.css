@@ -60,6 +60,11 @@ h1 {
 	color: #3196DF;
 }
 
+section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /* --------------------- Nav --------------------- */
 
 
@@ -68,7 +73,7 @@ h1 {
 
 /* --------------------- La Maison --------------------- */
 
-#categorie-maison div .row{
+#categorie-maison div .row {
 	background-color: #F8F8F8;
 	margin: 2%;
 }
@@ -78,6 +83,12 @@ h1 {
 
 /* --------------------- Nous Contacter --------------------- */
 
+.iframe-google-map {
+	border:0;
+	width: 100%;
+	height: 300px;
+	margin-bottom: -20px;
+}
 
 /* --------------------- Footer --------------------- */
 footer {
@@ -85,11 +96,11 @@ footer {
 	height: 50px;
 }
 
-footer ul{
+footer ul {
 	list-style-type: none;
 }
 
-footer ul li{
+footer ul li {
 	margin-top: 15px;
 	color: #fff;
 	margin-right: 50px;
