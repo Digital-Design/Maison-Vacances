@@ -67,6 +67,22 @@ section {
 
 /* --------------------- Nav --------------------- */
 
+.navbar {
+	background-color: #3196DF;
+}
+
+.navbar-collapse .navbar-nav li a{
+	color: #fff;
+	font-size: 17px;
+}
+
+.navbar-collapse .navbar-nav li a:hover {
+	color: #F8F8F8;
+}
+
+.navbar-collapse .navbar-nav .active a, .navbar-collapse .navbar-nav .active a:focus {
+	color: #3196DF;
+}
 
 /* --------------------- Header --------------------- */ 
 
@@ -249,6 +265,19 @@ figure.effect-steve:hover p {
 	width: 100%;
 	height: 300px;
 	margin-bottom: -20px;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
 }
 
 /* --------------------- Footer --------------------- */
