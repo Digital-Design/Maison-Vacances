@@ -82,4 +82,15 @@ h1 {
 /* --------------------- Footer --------------------- */
 footer {
 	background-color: #3196DF;
+	height: 50px;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer ul li{
+	margin-top: 15px;
+	color: #fff;
+	margin-right: 50px;
 }
