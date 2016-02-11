@@ -1,4 +1,6 @@
 <h1>Site static Maison-Vacances</h1>
+
+<h2>Maquette</h2>
 ![alt tag](https://github.com/Digital-Design/Maison-Vacances/blob/master/screenshot.png)
 
 
