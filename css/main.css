@@ -68,6 +68,10 @@ h1 {
 
 /* --------------------- La Maison --------------------- */
 
+#categorie-maison div .row{
+	background-color: #F8F8F8;
+	margin: 2%;
+}
 
 /* --------------------- Les Alentours --------------------- */
 
