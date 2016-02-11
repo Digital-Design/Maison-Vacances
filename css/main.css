@@ -1,0 +1,45 @@
+/* --------------------- Global --------------------- */
+
+/*
+COULEURS :;
+Bleu : #3196DF
+Gris Clair : #F8F8F8
+*/
+
+@font-face {
+	font-family: 'Nexa Rust Script';
+	src: url('../fonts/NexaRustScriptL.otf');
+}
+
+body {
+	font-family: Arial;
+}
+
+h1 {
+	font-family: 'Nexa Rust Script', Arial;
+}
+
+.fond-bleu {
+	color: #3196DF;
+}
+
+.fond-blanc {
+	color: #fff;
+}
+
+/* --------------------- Nav --------------------- */
+
+
+/* --------------------- Header --------------------- */ 
+
+
+/* --------------------- La Maison --------------------- */
+
+
+/* --------------------- Les Alentours --------------------- */
+
+
+/* --------------------- Nous Contacter --------------------- */
+
+
+/* --------------------- Footer --------------------- */
