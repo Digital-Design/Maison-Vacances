@@ -2,12 +2,14 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
+	<title>Maison de Vacances</title>
+	<link rel="icon" type="image/png" href="img/vague_bleu.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css"> 
 </head>
-<body>
+<body id="categorie-top">
 
 	<!-- Nav -->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -19,13 +21,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Brand</a>
+				<a class="navbar-brand" href="#categorie-top">Accueil</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-					<li><a href="#">Link</a></li>
+					<li class="active"><a href="#categorie-maison">La Maison</a></li>
+					<li><a href="#categorie-alentours">Les Alentours</a></li>
+					<li><a href="#categorie-contact">Nous Contacter</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Réserver</a></li>
 				</ul>
 			</div>
 		</div>
@@ -54,28 +60,29 @@
 		</div>
 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
+			<span class="sr-only">Précédent</span>
 		</a>
 		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
+			<span class="sr-only">Suivant</span>
 		</a>
 	</div>
 
 	<div class="container-fluid">
 
 		<!-- Categorie La maison -->
-		<div class="row">
+		<div class="row" id="categorie-maison">
+			<h1>La Maison</h1>
 			<div class="col-md-10">
 				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
 			</div>
 			<div class="col-md-2">
-				<img src="img/maison-1.JPG" alt="maison1" height="100px">
+				<img src="img/maison-1.JPG" alt="maison1" height="200px">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-2">
-				<img src="img/maison-2.JPG" alt="maison2" height="100px">
+				<img src="img/maison-2.JPG" alt="maison2" height="200px">
 			</div>
 			<div class="col-md-10">
 				On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
@@ -83,20 +90,22 @@
 		</div>
 
 		<!-- Categorie Les alentours -->
-		<div class="row">
+		<div class="row" id="categorie-alentours">
+			<h1>Les Alentours</h1>
 			<div class="col-md-4">
-				<img src="img/alentours-1.JPG" alt="alentours1" height="100px">
+				<img src="img/alentours-1.JPG" alt="alentours1" height="200px">
 			</div>
 			<div class="col-md-4">
-				<img src="img/alentours-2.JPG" alt="alentours2" height="100px">
+				<img src="img/alentours-2.JPG" alt="alentours2" height="200px">
 			</div>
 			<div class="col-md-4">
-				<img src="img/alentours-3.JPG" alt="alentours3" height="100px">
+				<img src="img/alentours-3.JPG" alt="alentours3" height="200px">
 			</div>
 		</div>
 
 		<!-- Categorie Contact -->
-		<form>
+		<form id="categorie-contact">
+			<h1>Nous Contacter</h1>
 			<div class="form-group">
 				<label for="exampleInputEmail1">Email</label>
 				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -111,7 +120,10 @@
 
 	<!-- Footer -->
 	<footer>
-		
+		<ul>
+			<li class="pull-right">Test</li>
+			<li class="pull-right">Site DD</li>
+		</ul>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
