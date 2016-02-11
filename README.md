@@ -1,5 +1,5 @@
 <h1>Site static Maison-Vacances</h1>
-
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/8ab3dfc6a887457d99f8b4ca1cca5335)](https://www.codacy.com/app/konstantin-sidorenko/Maison-Vacances)
 <h2>Maquette</h2>
 ![alt tag](https://github.com/Digital-Design/Maison-Vacances/blob/master/screenshot.png)
 
