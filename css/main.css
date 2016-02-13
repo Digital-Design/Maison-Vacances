@@ -100,22 +100,38 @@ figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 100%;
-	max-width: 480px;
+    margin: 1.5%;
 	max-height: 360px;
-	width: 48%;
+	width: 30%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+    display: block;
+}
+
+@media screen and (max-width: 80em) {
+    
+    figure {
+        width: 45%;
+        margin: 2.5%;
+    }
+    
+}
+
+@media screen and (max-width: 50em) {
+    
+    figure {
+        width: 100%;
+        margin: 10px 0%;
+    }
 }
 
 figure img {
 	position: relative;
 	display: block;
+    min-height: 100%
 	min-height: 100%;
-	max-width: 100%;
 	opacity: 0.8;
 }
 
@@ -174,7 +190,6 @@ figure p {
 
 figure.effect-steve {
 	z-index: auto;
-	overflow: visible;
 	background: #000;
 }
 
