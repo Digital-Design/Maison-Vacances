@@ -282,6 +282,27 @@ figure.effect-steve:hover p {
 	margin-bottom: -20px;
 }
 
+h3 {
+	font-size: 24px;
+}
+
+form {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.mail {
+	text-align: right;
+}
+
+.form-group {
+	margin: 15px 0px 25px 0px;
+}
+
+i {
+	color: #3196DF;
+}
+
 ::-webkit-input-placeholder {
    font-style: italic;
 }
