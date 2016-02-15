@@ -61,7 +61,14 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/moment.min.js"></script>
-  <script src="js/fullcalendar.min.js"></script>
+  <script src="js/fullcalendar.min.js">
+    $("#calendar").fullCalendar({
+      googleCalendarApiKey: "AIzaSyAzcmUADh2dOxpfUW3XLRcQRmtSJHrA8EE",
+      events: {
+        googleCalendarId: "konstantin@yellowcake.net"
+      }
+    });
+  </script>
   <script src="js/fullcalendar-fr.js"></script>
   <script src="js/main.js"></script>
 </body>

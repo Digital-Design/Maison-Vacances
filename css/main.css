@@ -96,6 +96,11 @@ section {
 
 /* --------------------- Header --------------------- */
 
+.carousel-inner > .item > img{
+	width:100%;
+	/* en attendant */
+	height: 500px;
+}
 
 /* --------------------- La Maison --------------------- */
 
@@ -110,31 +115,31 @@ figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
-    margin: 1.5%;
+	margin: 1.5%;
 	max-height: 360px;
 	width: 30%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
-    display: block;
+	display: block;
 }
 
 @media screen and (max-width: 80em) {
 
-    figure {
-        width: 45%;
-        margin: 2.5%;
-    }
+	figure {
+		width: 45%;
+		margin: 2.5%;
+	}
 
 }
 
 @media screen and (max-width: 50em) {
 
-    figure {
-        width: 100%;
-        margin: 10px 0;
-    }
+	figure {
+		width: 100%;
+		margin: 10px 0;
+	}
 }
 
 figure img {
@@ -180,7 +185,7 @@ figure figcaption > a {
 figure h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 figure h2 span {
@@ -289,6 +294,7 @@ figure.effect-steve:hover p {
 	width: 100%;
 	height: 300px;
 	margin-bottom: -20px;
+  pointer-events: none;
 }
 
 h3 {
@@ -313,16 +319,16 @@ i {
 }
 
 ::-webkit-input-placeholder {
-   font-style: italic;
+	font-style: italic;
 }
 :-moz-placeholder {
-   font-style: italic;
+	font-style: italic;
 }
 ::-moz-placeholder {
-   font-style: italic;
+	font-style: italic;
 }
 :-ms-input-placeholder {
-   font-style: italic;
+	font-style: italic;
 }
 
 /* --------------------- Footer --------------------- */
