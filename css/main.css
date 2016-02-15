@@ -140,7 +140,6 @@ figure {
 figure img {
 	position: relative;
 	display: block;
-    min-height: 100%
 	min-height: 100%;
 	opacity: 0.8;
 }
@@ -306,7 +305,7 @@ form {
 }
 
 .form-group {
-	margin: 15px 0px 25px 0px;
+	margin: 15px 0 25px 0;
 }
 
 i {

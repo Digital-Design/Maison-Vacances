@@ -1,18 +1,18 @@
-$('a[href^="#"]').click(function(){
+$("a[href^='#']").click(function(){
 	var the_id = $(this).attr("href");
-	$(this).parent().parent().find("li").each(function( index ) {
-		$(this).removeClass('active');
+	$(this).parent().parent().find("li").each(function() {
+		$(this).removeClass("active");
 	});
-	$(this).parent().addClass('active');
-	$('html, body').animate({
+	$(this).parent().addClass("active");
+	$("html, body").animate({
 		scrollTop:$(the_id).offset().top - 50
-	}, 'slow');
+	}, "slow");
 	return false;
 });
 
-$('#calendar').fullCalendar({
-  googleCalendarApiKey: 'AIzaSyAzcmUADh2dOxpfUW3XLRcQRmtSJHrA8EE',
+$("#calendar").fullCalendar({
+  googleCalendarApiKey: "AIzaSyAzcmUADh2dOxpfUW3XLRcQRmtSJHrA8EE",
   events: {
-    googleCalendarId: 'konstantin@yellowcake.net'
+    googleCalendarId: "konstantin@yellowcake.net"
   }
 });
