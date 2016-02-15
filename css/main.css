@@ -89,7 +89,12 @@ section {
 	color: #fff;
 }
 
-/* --------------------- Header --------------------- */ 
+.navbar-right .active a .fa-calendar-plus-o{
+	color: #3196DF;
+}
+
+
+/* --------------------- Header --------------------- */
 
 
 /* --------------------- La Maison --------------------- */
@@ -116,16 +121,16 @@ figure {
 }
 
 @media screen and (max-width: 80em) {
-    
+
     figure {
         width: 45%;
         margin: 2.5%;
     }
-    
+
 }
 
 @media screen and (max-width: 50em) {
-    
+
     figure {
         width: 100%;
         margin: 10px 0%;
@@ -312,13 +317,13 @@ i {
    font-style: italic;
 }
 :-moz-placeholder {
-   font-style: italic;  
+   font-style: italic;
 }
 ::-moz-placeholder {
-   font-style: italic;  
+   font-style: italic;
 }
-:-ms-input-placeholder {  
-   font-style: italic; 
+:-ms-input-placeholder {
+   font-style: italic;
 }
 
 /* --------------------- Footer --------------------- */

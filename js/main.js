@@ -9,3 +9,10 @@ $('a[href^="#"]').click(function(){
 	}, 'slow');
 	return false;
 });
+
+$('#calendar').fullCalendar({
+  googleCalendarApiKey: 'AIzaSyAzcmUADh2dOxpfUW3XLRcQRmtSJHrA8EE',
+  events: {
+    googleCalendarId: 'konstantin@yellowcake.net'
+  }
+});
