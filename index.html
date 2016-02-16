@@ -190,7 +190,7 @@
 	</section>
 
 	<!-- google map -->
-	<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d85630.13498107226!2d-4.194393111816397!3d47.879455624627184!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1455194756783" width="600" height="550" frameborder="0" class="iframe-google-map" allowfullscreen></iframe>
+	<div id="map"></div>
 
 	<!-- Footer -->
 	<footer>
@@ -200,6 +200,25 @@
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		  var myLatLng = {lat: 47.9858635, lng: -4.4660625};
+
+		  // Create a map object and specify the DOM element for display.
+		  var map = new google.maps.Map(document.getElementById('map'), {
+		    center: myLatLng,
+		    scrollwheel: false,
+		    zoom: 12
+		  });
+
+		  // Create a marker and set its position.
+		  var marker = new google.maps.Marker({
+		    map: map,
+		    position: myLatLng,
+		    title: 'Hello World!'
+		  });
+
+	</script>
 </body>
 </html>

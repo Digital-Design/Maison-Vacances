@@ -289,12 +289,11 @@ figure.effect-steve:hover p {
 
 /* --------------------- Nous Contacter --------------------- */
 
-.iframe-google-map {
+#map {
 	border:0;
 	width: 100%;
 	height: 300px;
-	margin-bottom: -20px;
-	pointer-events: none;
+	margin-bottom: -15px;
 }
 
 h3 {
