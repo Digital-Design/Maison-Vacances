@@ -109,6 +109,10 @@ section {
 	margin: 2%;
 }
 
+#categorie-maison div .row .well{
+	padding: 0;
+}
+
 /* --------------------- Les Alentours --------------------- */
 
 figure {

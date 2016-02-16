@@ -91,12 +91,14 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
-					<img src="img/maison-2.JPG" alt="maison2" width="100%">
-				</div>
-				<div class="col-md-9">
-					<h2>Titre 2</h2>
-					<p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
+				<div class="well well-lg clearfix">
+					<div class="col-xs-12 col-md-9 col-md-push-3">
+						<h2>Titre 2</h2>
+						<p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
+					</div>
+					<div class="col-xs-12 col-md-3 col-md-pull-9">
+						<img src="img/maison-2.JPG" alt="maison2" width="100%">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -202,23 +204,5 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript">
-		  var myLatLng = {lat: 47.9858635, lng: -4.4660625};
-
-		  // Create a map object and specify the DOM element for display.
-		  var map = new google.maps.Map(document.getElementById('map'), {
-		    center: myLatLng,
-		    scrollwheel: false,
-		    zoom: 12
-		  });
-
-		  // Create a marker and set its position.
-		  var marker = new google.maps.Marker({
-		    map: map,
-		    position: myLatLng,
-		    title: 'Hello World!'
-		  });
-
-	</script>
 </body>
 </html>
