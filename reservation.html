@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Maison de Vacances</title>
-  <link rel="icon" type="image/png" href="img/vague_bleu.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/fullcalendar.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+  <head>
+    <meta charset="UTF-8">
+    <title>Maison de Vacances</title>
+    <link rel="icon" type="image/png" href="img/vague_bleu.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 
-</head>
-<body id="categorie-top">
+  </head>
+  <body id="categorie-top">
 
-  <!-- Nav -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#categorie-top">
-          <img alt="Brand" src="img/vague_blanc.png" height="25px">
-        </a>
+    <!-- Nav -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#categorie-top">
+            <img alt="Brand" src="img/vague_blanc.png" height="25px">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html#categorie-maison">La Maison</a></li>
+            <li><a href="index.html#categorie-alentours">Les Alentours</a></li>
+            <li><a href="index.html#categorie-contact">Nous Contacter</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    <br/>
+    <br/>
+    <br/>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html#categorie-maison">La Maison</a></li>
-          <li><a href="index.html#categorie-alentours">Les Alentours</a></li>
-          <li><a href="index.html#categorie-contact">Nous Contacter</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<br/>
-<br/>
-<br/>
-  <section class="fond-blanc">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Agenda des Réservations</h1>
-          <div id="calendar" class="col-md-6 col-md-offset-3" >
+    <!-- agenda -->
+    <section class="fond-blanc">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Agenda des Réservations</h1>
+            <div id="calendar" class="col-md-6 col-md-offset-3" >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Categorie Réserver -->
-	<section id="categorie-contact" class="fond-blanc">
-		<h1>Réserver</h1>
-		<div class="container-fluid">
-			<div class="col-md-6 col-md-offset-3">
-				<form>
-					<div class="form-group">
-						<input type="name" class="form-control" placeholder="Nom">
-					</div>
-					<div class="form-group">
-						<input type="email" class="form-control" placeholder="Mail">
-					</div>
-          <div class="row">
-            <div class='col-md-6'>
-              <div class="form-group">
-                <div class='input-group date' id='datetimepicker6'>
-                  <input type='text' class="form-control" placeholder="Date d'arrivée">
-                  <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                  </span>
+    <!-- formulaire de Réservervation -->
+    <section id="categorie-contact" class="fond-blanc">
+      <h1>Réserver</h1>
+      <div class="container-fluid">
+        <div class="col-md-6 col-md-offset-3">
+          <form>
+            <div class="form-group">
+              <input type="name" class="form-control" placeholder="Nom">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Mail">
+            </div>
+            <div class="row">
+              <div class='col-md-6'>
+                <div class="form-group">
+                  <div class='input-group date' id='datetimepicker6'>
+                    <input type='text' class="form-control" placeholder="Date d'arrivée">
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class='col-md-6'>
+                <div class="form-group">
+                  <div class='input-group date' id='datetimepicker7'>
+                    <input type='text' class="form-control" placeholder="Date de départ">
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class='col-md-6'>
-              <div class="form-group">
-                <div class='input-group date' id='datetimepicker7'>
-                  <input type='text' class="form-control" placeholder="Date de départ">
-                  <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                  </span>
-                </div>
-              </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Message"></textarea>
             </div>
-          </div>
-					<div class="form-group">
-						<textarea class="form-control" placeholder="Message"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Envoyer</button>
-				</form>
-			</div>
-		</div>
-	</section>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <ul>
-      <li class="pull-left">Site par Digital Design <!-- Ne pas oublier les liens --></li>
-    </ul>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <li class="pull-left">Site par Digital Design <!-- Ne pas oublier les liens --></li>
+      </ul>
+    </footer>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/moment.min.js"></script>
-  <script src="js/fullcalendar.min.js"></script>
-  <script src="js/fullcalendar-fr.js"></script>
-  <script src="js/gcal.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-  <script type="text/javascript">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/fullcalendar.min.js"></script>
+    <script src="js/fullcalendar-fr.js"></script>
+    <script src="js/gcal.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    //google calendar
     $("#calendar").fullCalendar({
       googleCalendarApiKey: "AIzaSyCCpV2hj3DctiVefiiB_BgtMwuXBUuCGZ0",
       events: {
@@ -126,13 +129,18 @@
         }
       }
     });
-  </script>
-  <script type="text/javascript">
+
+    //date picker
     $(function () {
-      $('#datetimepicker6').datetimepicker();
-      $('#datetimepicker7').datetimepicker({
-        useCurrent: false //Important! See issue #1075
+      $('#datetimepicker6').datetimepicker({
+        format: 'DD/MM/YYYY',
+        minDate: new Date()
       });
+      $('#datetimepicker7').datetimepicker({
+        format: 'DD/MM/YYYY',
+        minDate: new Date(),
+    useCurrent: false //Important! See issue #1075
+    });
       $("#datetimepicker6").on("dp.change", function (e) {
         $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
       });
@@ -140,7 +148,6 @@
         $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
       });
     });
-</script>
-
-</body>
+    </script>
+  </body>
 </html>
