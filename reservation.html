@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/fullcalendar.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 
 </head>
 <body id="categorie-top">
@@ -68,11 +69,25 @@
 						<input type="email" class="form-control" placeholder="Mail">
 					</div>
           <div class="row">
-            <div class="form-group col-md-6">
-              <input  type="text" placeholder="Date d'arrivée"  id="datepicker1">
+            <div class='col-md-6'>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker6'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="form-group col-md-6">
-              <input  type="text" placeholder="Date de départ"  id="datepicker2">
+            <div class='col-md-6'>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker7'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 					<div class="form-group">
@@ -98,8 +113,7 @@
   <script src="js/fullcalendar-fr.js"></script>
   <script src="js/gcal.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
   <script type="text/javascript">
     $("#calendar").fullCalendar({
       googleCalendarApiKey: "AIzaSyCCpV2hj3DctiVefiiB_BgtMwuXBUuCGZ0",
@@ -114,14 +128,19 @@
     });
   </script>
   <script type="text/javascript">
-    $(document).ready(function () {
-     $('#datepicker1').datepicker({
-      format: "dd/mm/yyyy"
-     });
-     $('#datepicker2').datepicker({
-      format: "dd/mm/yyyy"
-     });
+    $(function () {
+      $('#datetimepicker6').datetimepicker();
+      $('#datetimepicker7').datetimepicker({
+        useCurrent: false //Important! See issue #1075
+      });
+      $("#datetimepicker6").on("dp.change", function (e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+      });
+      $("#datetimepicker7").on("dp.change", function (e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+      });
     });
-    </script>
+</script>
+
 </body>
 </html>
