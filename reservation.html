@@ -72,6 +72,11 @@
       googleCalendarApiKey: "AIzaSyCCpV2hj3DctiVefiiB_BgtMwuXBUuCGZ0",
       events: {
         googleCalendarId: "el4gjmum3f30jf27oestork48c@group.calendar.google.com"
+      },
+      eventClick: function(event) {
+        if (event.url) {
+          return false;
+        }
       }
     });
   </script>
