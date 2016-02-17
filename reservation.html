@@ -124,6 +124,7 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
+
     //google calendar
     $("#calendar").fullCalendar({
       googleCalendarApiKey: "AIzaSyAzcmUADh2dOxpfUW3XLRcQRmtSJHrA8EE",
@@ -137,14 +138,29 @@
       }
     });
 
-    //date picker
+    //datepicker
     $(function () {
+
       //ajout du addDay pour augmenter la date d'un jour
       Date.prototype.addDays = function(days) {
         var dat = new Date(this.valueOf());
         dat.setDate(dat.getDate() + days);
         return dat;
       };
+
+      //fonction qui ajoute dans un array les dates qui sont dans un intervale de 2 dates
+      function disabledDates(events){
+        var disabledDatesArray = [];
+        $.each(events, function (key, value) {
+          var currentDate = new Date(value.start._i);
+          while (currentDate < new Date(value.end._i)) {
+            disabledDatesArray.push(new Date(currentDate));
+            currentDate = currentDate.addDays(1);
+          }
+        });
+        return disabledDatesArray;
+      }
+
       //config des dates pickers
       $('#datetimepicker6').datetimepicker({
         format: 'DD/MM/YYYY',
@@ -156,33 +172,22 @@
         minDate: new Date(),
         useCurrent: false
       });
-      //à l'ouverture des datepickers
-      //on interdit les dates inférieurs à celle actuelle + les dates réservées + celle selectionnée
+
+      //à l'ouverture des datepickers on interdit les dates inférieurs à celle actuelle + les dates réservées + celle selectionnée
       $("#datetimepicker6").on("dp.show", function (e) {
         $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        var disabledDatesArray = [];
-        $.each($('#calendar').fullCalendar('clientEvents'), function (key, value) {
-          var currentDate = new Date(value.start._i);
-          while (currentDate < new Date(value.end._i)) {
-            disabledDatesArray.push(new Date(currentDate));
-            currentDate = currentDate.addDays(1);
-          }
-        });
+        var disabledDatesArray = disabledDates($('#calendar').fullCalendar('clientEvents'));
+        $('#datetimepicker7').data("DateTimePicker").disabledDates(disabledDatesArray);
         $('#datetimepicker6').data("DateTimePicker").disabledDates(disabledDatesArray);
       });
       $("#datetimepicker7").on("dp.change", function (e) {
         $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-        var disabledDatesArray = [];
-        $.each($('#calendar').fullCalendar('clientEvents'), function (key, value) {
-          var currentDate = new Date(value.start._i);
-          while (currentDate < new Date(value.end._i)) {
-            disabledDatesArray.push(new Date(currentDate));
-            currentDate = currentDate.addDays(1);
-          }
-        });
+        var disabledDates = disabledDates($('#calendar').fullCalendar('clientEvents'));
         $('#datetimepicker7').data("DateTimePicker").disabledDates(disabledDatesArray);
+        $('#datetimepicker6').data("DateTimePicker").disabledDates(disabledDatesArray);
       });
     });
+
   </script>
 </body>
 </html>
