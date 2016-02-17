@@ -1,30 +1,53 @@
-$("a[href^='#']").click(function(){
-	var theId = $(this).attr("href");
-	var exceptions = ["#carousel-example-generic"];
-	if(jQuery.inArray(theId, exceptions)){
-		$(this).parent().parent().find("li").each(function() {
-			$(this).removeClass("active");
+$(document).ready(function () {
+	$(document).on("scroll", onScroll);
+
+	//permet le scroll swing
+	$('a[href^="#"]').on('click', function (e) {
+		e.preventDefault();
+		$(document).off("scroll");
+
+		$('a').parent().each(function () {
+			$(this).removeClass('active');
 		});
-		$(this).parent().addClass("active");
-		$("html, body").animate({
-			scrollTop:$(theId).offset().top - 50
-		}, "slow");
-		return false;
-	}
+		$(this).parent().addClass('active');
+
+		var target = this.hash;
+		$target = $(target);
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top - $('.navbar').height()
+		}, 500, 'swing', function () {
+			$(document).on("scroll", onScroll);
+		});
+	});
 });
 
-var myLatLng = {lat: 47.9858635, lng: -4.4660625};
+//permet d'ajouter activer sur certain lien
+function onScroll(event){
+	var scrollPos = $(document).scrollTop();
+	$('.nav-link a').each(function () {
+		var currLink = $(this);
+		var refElement = $(currLink.attr("href"));
+		if(refElement.position() !== undefined)
+			if (refElement.position().top <= scrollPos + $('.navbar').height() && refElement.position().top + refElement.height() > scrollPos + $('.navbar').height() - 40) {
+				$('.nav-link').removeClass("active");
+				currLink.parent().addClass("active");
+			}
+			else{
+				currLink.parent().removeClass("active");
+			}
+	});
+}
 
-// Create a map object and specify the DOM element for display.
-var map = new google.maps.Map(document.getElementById('map'), {
+//google map
+var myLatLng = {lat: 47.9858635, lng: -4.4660625};
+var map = new google.maps.Map(document.getElementById('map'),{
 	center: myLatLng,
 	scrollwheel: false,
 	zoom: 12
 });
-
-// Create a marker and set its position.
+//ajout du markeur
 var marker = new google.maps.Marker({
 	map: map,
 	position: myLatLng,
-	title: 'Hello World!'
+	title: 'Maison de Vacances'
 });
