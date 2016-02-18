@@ -339,6 +339,10 @@ i {
 	margin : 0 auto;
 }
 
+#message{
+	resize: none;
+}
+
 /* --------------------- Footer --------------------- */
 footer {
 	background-color: #3196DF;
