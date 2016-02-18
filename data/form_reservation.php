@@ -17,6 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
   }
 
+  //Check des dates
+  /*if(date("d/m/Y") < DateTime($date_arrivee) && new DateTime($date_arrivee) < new DateTime($date_depart)){
+    http_response_code(400);
+    echo "Veuillez revoir les dates.";
+    exit;
+  }*/
+
   $recipient = "locationporsgrouen@gmail.com";
   $subject = "Demande de réservation depuis votre site de $prenom_nom";
   $email_content = "Demande de réservation\n";
