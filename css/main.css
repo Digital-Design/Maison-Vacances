@@ -255,6 +255,7 @@ figure.effect-steve h2,
 figure.effect-steve p {
 	background: #fff;
 	color: #2d434e;
+    cursor: default;
 }
 
 figure.effect-steve h2 {
