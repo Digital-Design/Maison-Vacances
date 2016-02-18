@@ -93,6 +93,11 @@ section {
 	color: #3196DF;
 }
 
+a:focus {
+	outline: 0px !important;
+	color: #fff;
+}
+
 
 /* --------------------- Header --------------------- */
 
@@ -111,6 +116,10 @@ section {
 
 #categorie-maison div .row .well{
 	padding: 0;
+}
+
+label {
+	margin-right: 3px;
 }
 
 /* --------------------- Les Alentours --------------------- */
@@ -301,7 +310,7 @@ figure.effect-steve:hover p {
 }
 
 h3 {
-	font-size: 22px;
+	font-size: 21px;
 }
 
 form {
@@ -309,7 +318,7 @@ form {
 	margin-bottom: 20px;
 }
 
-.mail {
+.contact-mail {
 	text-align: right;
 }
 
@@ -342,6 +351,19 @@ i {
 #message{
 	resize: none;
 }
+
+@media screen and (max-width: 1199px) {
+	.contact-mail, .contact-tel {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	h3 {
+		font-size: 16px;
+	}
+}
+
 
 /* --------------------- Footer --------------------- */
 footer {

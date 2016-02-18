@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   //Check des datas
   if ( empty($prenom_nom) OR empty($object) OR empty($message) OR !filter_var($mail, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
-    echo "Les champs doivent êtres remplis.";
+    echo "<button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button> Les champs doivent êtres remplis.";
     exit;
   }
 
@@ -26,13 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   //envoi du mail
   if (mail($recipient, $subject, $email_content, $email_headers)) {
     http_response_code(200);
-    echo "Merci! Votre message a été envoyé.";
+    echo "<button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button> Merci ! Votre message a été envoyé.";
   } else {
     http_response_code(500);
-    echo "Oups! Il y a eu un problème lors de l'envoi du formulaire.";
+    echo "<button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button> Oups ! Il y a eu un problème lors de l'envoi du formulaire.";
   }
 }
 else{
   http_response_code(403);
-  echo "Il y avait un problème avec la soumission du formulaire, veuillez essayer à nouveau.";
+  echo "<button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button> Il y avait un problème avec la soumission du formulaire, veuillez essayer à nouveau.";
 }
