@@ -334,6 +334,11 @@ i {
 	font-style: italic;
 }
 
+.g-recaptcha{
+	display : table;
+	margin : 0 auto;
+}
+
 /* --------------------- Footer --------------------- */
 footer {
 	background-color: #3196DF;

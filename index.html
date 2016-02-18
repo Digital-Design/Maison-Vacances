@@ -184,6 +184,9 @@
 					<div class="form-group">
 						<textarea id="message" name="message" class="form-control" placeholder="Message" required></textarea>
 					</div>
+					<div class="form-group">
+						<div class="g-recaptcha" data-sitekey="6LdopRgTAAAAAIgK84XyE896565-mHA0M3ivNPc0"></div>
+					</div>
 					<button type="submit" class="btn btn-primary">Envoyer</button>
 				</form>
 			</div>
@@ -202,6 +205,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script src="js/main.js"></script>
 	<script type="text/javascript">
 		//Form Ajax
@@ -225,6 +229,7 @@
 							$('#message_form').removeClass('alert-danger');
 							$('#message_form').html(html);
 							$('#message_form').removeClass('hide');
+							$(this).hide(10);
 						},
 						error : function(resultat, statut, erreur){
 							$('#message_form').addClass('alert-danger');
