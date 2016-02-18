@@ -1,129 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Maison de Vacances</title>
-    <link rel="icon" type="image/png" href="img/vague_bleu.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/fullcalendar.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+<head>
+  <meta charset="UTF-8">
+  <title>Maison de Vacances</title>
+  <link rel="icon" type="image/png" href="img/vague_bleu.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fullcalendar.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 
-  </head>
-  <body id="categorie-top">
+</head>
+<body id="categorie-top">
 
-    <!-- Nav -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img alt="Brand" src="img/vague_blanc.png" height="25px">
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html#categorie-maison">La Maison</a></li>
-            <li><a href="index.html#categorie-alentours">Les Alentours</a></li>
-            <li><a href="index.html#categorie-contact">Nous Contacter</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
-          </ul>
-        </div>
+  <!-- Nav -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img alt="Brand" src="img/vague_blanc.png" height="25px">
+        </a>
       </div>
-    </nav>
-    <br/>
-    <br/>
-    <br/>
 
-    <!-- agenda -->
-    <section class="fond-blanc">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Agenda des Réservations</h1>
-            <div id="calendar" class="col-md-6 col-md-offset-3" >
-            </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html#categorie-maison">La Maison</a></li>
+          <li><a href="index.html#categorie-alentours">Les Alentours</a></li>
+          <li><a href="index.html#categorie-contact">Nous Contacter</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br/>
+  <br/>
+  <br/>
+
+  <!-- agenda -->
+  <section class="fond-blanc">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Agenda des Réservations</h1>
+          <div id="calendar" class="col-md-6 col-md-offset-3" >
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- formulaire de Réservervation -->
-    <section id="categorie-contact" class="fond-blanc">
-      <h1>Demande de réservation</h1>
-      <div class="container-fluid">
-        <div class="col-md-6 col-md-offset-3">
-          <form>
-            <div class="form-group">
-              <input type="name" class="form-control" placeholder="Nom">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Mail">
-            </div>
-            <div class="form-group">
-              <input type="tel" class="form-control" placeholder="Téléphone">
-            </div>
-            <div class="row">
-              <div class='col-md-6'>
-                <div class="form-group">
-                  <div class='input-group date' id='datetimepicker6'>
-                    <input type='text' class="form-control" placeholder="Date d'arrivée">
-                    <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class='col-md-6'>
-                <div class="form-group">
-                  <div class='input-group date' id='datetimepicker7'>
-                    <input type='text' class="form-control" placeholder="Date de départ">
-                    <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                  </div>
+  <!-- formulaire de Réservervation -->
+  <section id="categorie-contact" class="fond-blanc">
+    <h1>Demande de réservation</h1>
+    <div class="container-fluid">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="form-reservation" action="data/form_reservation.php" method="post">
+          <div id="message_form" class="alert" role="alert"></div>
+          <div class="form-group">
+            <input type="text" id="nom_prenom" name="nom_prenom" class="form-control" placeholder="Nom Prénom" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="mail" name="mail" class="form-control" placeholder="Mail" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="telephone" name="telephone" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" class="form-control" placeholder="Téléphone" required>
+          </div>
+          <div class="row">
+            <div class='col-md-6'>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker6'>
+                  <input type='text' id="date_arrivee" name="date_arrivee" class="form-control" placeholder="Date d'arrivée" required>
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" placeholder="Message"></textarea>
+            <div class='col-md-6'>
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker7'>
+                  <input type='text' id="date_depart" name="date_depart" class="form-control" placeholder="Date de départ" required>
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>
+              </div>
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
-          </form>
-        </div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" class="form-control" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- google map -->
-    <div id="map"></div>
+  <!-- google map -->
+  <div id="map"></div>
 
-    <!-- Footer -->
-    <footer>
-      <ul>
-        <li class="pull-left">Site par Digital Design <!-- Ne pas oublier les liens --></li>
-      </ul>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <ul>
+      <li class="pull-left">Site par Digital Design <!-- Ne pas oublier les liens --></li>
+    </ul>
+  </footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/fullcalendar.min.js"></script>
-    <script src="js/fullcalendar-fr.js"></script>
-    <script src="js/gcal.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/fullcalendar.min.js"></script>
+  <script src="js/fullcalendar-fr.js"></script>
+  <script src="js/gcal.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
 
     //google calendar
     $("#calendar").fullCalendar({
@@ -188,6 +189,40 @@
       });
     });
 
+    //Form Ajax
+    $(document).ready(function() {
+      $('#form-reservation').on('submit', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+
+        //Check du form
+        var prenom_nom = $('#prenom_nom').val();
+        var mail = $('#mail').val();
+        var telephone = $('#telephone').val();
+        var date_arrivee = $('#date_arrivee').val();
+        var date_depart = $('#date_depart').val();
+        var message = $('#message').val();
+        if(prenom_nom === '' || mail === '' || telephone === '' || date_arrivee === '' || date_depart === '' || message === '') {
+          alert('Les champs doivent êtres remplis');
+        }
+        else{
+          //envoi du form
+          $.ajax({
+            url: $this.attr('action'),
+            type: $this.attr('method'),
+            data: $this.serialize(),
+            success: function(html){
+              $('#message_form').addClass('alert-success');
+              $('#message_form').html(html);
+            },
+            error: function(html) {
+              $('#message_form').addClass('alert-danger');
+              $('#message_form').html(html);
+            }
+          });
+        }
+      });
+    });
   </script>
 </body>
 </html>

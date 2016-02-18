@@ -170,18 +170,19 @@
 					</div>
 				</div>
 
-				<form>
+				<form id="form-contact" action="data/form_contact.php" method="post">
+					<div id="message_form" class="alert" role="alert"></div>
 					<div class="form-group">
-						<input type="name" class="form-control" placeholder="Prénom Nom">
+						<input type="text" id="prenom_nom" name="prenom_nom" class="form-control" placeholder="Prénom Nom" required>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Objet">
+						<input type="text" id="object" name="object" class="form-control" placeholder="Objet" required>
 					</div>
 					<div class="form-group">
-						<input type="email" class="form-control" placeholder="Mail">
+						<input type="email" id="mail" name="mail" class="form-control" placeholder="Mail" required>
 					</div>
 					<div class="form-group">
-						<textarea class="form-control" placeholder="Message"></textarea>
+						<textarea id="message" name="message" class="form-control" placeholder="Message" required></textarea>
 					</div>
 					<button type="submit" class="btn btn-primary">Envoyer</button>
 				</form>
@@ -202,5 +203,40 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		//Form Ajax
+		$(document).ready(function() {
+			$('#form-contact').on('submit', function(e) {
+				e.preventDefault();
+				var $this = $(this);
+
+				var prenom_nom = $('#prenom_nom').val();
+				var object = $('#object').val();
+				var mail = $('#mail').val();
+				var message = $('#message').val();
+
+				if(prenom_nom === '' || object === '' || mail === '' || message === '') {
+					alert('Les champs doivent êtres remplis');
+				}
+				else{
+					//envoi du form
+					$.ajax({
+						url: $this.attr('action'),
+						type: $this.attr('method'),
+						data: $this.serialize(),
+						success: function(html, statut){
+							$('#message_form').addClass('alert-success');
+							$('#message_form').html(html);
+						},
+						error : function(resultat, statut, erreur){
+							$('#message_form').addClass('alert-danger');
+							console.log(resultat);
+							$('#message_form').html(resultat.responseText);
+						}
+					});
+				}
+			});
+		});
+	</script>
 </body>
 </html>
