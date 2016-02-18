@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/flickity.css" media="screen">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body id="categorie-top">
@@ -40,6 +41,9 @@
 	</nav>
 
 	<!-- Slider -->
+	<!-- Si on supprime suprimmer aussi les elements genre CSS 
+
+
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -75,6 +79,17 @@
 			<span class="sr-only">Suivant</span>
 		</a>
 	</div>
+
+	<div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+		<div class="gallery-cell"></div>
+	</div>-->
+
+	<div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "setGallerySize": false, "cellAlign": "left" }'>
+		<img src="img/slider-1.JPG" alt="Aremplir" />
+		<img src="img/slider-2.JPG" alt="Aremplir" />
+		<img src="img/slider-3.JPG" alt="Aremplir" />
+	</div>
+
 
 
 	<!-- Categorie La maison -->
@@ -204,6 +219,7 @@
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script src="js/main.js"></script>

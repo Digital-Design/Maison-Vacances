@@ -107,6 +107,18 @@ a:focus {
 	height: 700px;
 }
 
+.gallery {
+	height: 700px;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+/*.flickity-page-dots {
+	bottom: 10px;
+} Décallage des points
+*/
 /* --------------------- La Maison --------------------- */
 
 #categorie-maison div .row {
