@@ -8,47 +8,71 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <style type="text/css">
+  html, body {
+    height: 100%;
+  }
+  #wrap {
+    min-height: 100%;
+  }
+  #main {
+    overflow:auto;
+    padding-bottom:50px;
+  }
+  footer{
+    position: relative;
+    margin-top: -62px;
+    height: 50px;
+    clear:both;
+  }
+  </style>
 </head>
 <body id="categorie-top">
 
-  <!-- Nav -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="./">
-          <img alt="Brand" src="img/vague_blanc.png" height="25px">
-        </a>
-      </div>
+  <div id="wrap">
+    <div id="main" class="container clear-top">
+      <!-- Nav -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">
+              <img alt="Brand" src="img/vague_blanc.png" height="25px">
+            </a>
+          </div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active nav-link"><a href="./#categorie-maison">La Maison</a></li>
-          <li class="nav-link"><a href="./#categorie-alentours">Les Alentours</a></li>
-          <li class="nav-link"><a href="./#categorie-contact">Nous Contacter</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-link"><a href="reservation"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
-        </ul>
-      </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active nav-link"><a href="./#categorie-maison">La Maison</a></li>
+              <li class="nav-link"><a href="./#categorie-alentours">Les Alentours</a></li>
+              <li class="nav-link"><a href="./#categorie-contact">Nous Contacter</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-link"><a href="reservation"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <!-- message 404 -->
+      <section class="fond-blanc">
+        <h1><a href="reservation.html">Vous êtes perdu ? <br/>Prenez des vacances. <br/>Rendez vous par ici</a></h1>
+      </section>
+
+      <!-- google map -->
+      <div id="map"></div>
+
     </div>
-  </nav>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <section class="fond-blanc">
-    <h1><a href="reservation.html">Vous êtes perdu ? <br/>Prenez des vacances. <br/>Rendez vous par ici</a></h1>
-  </section>
-
-  <!-- google map -->
-  <div id="map"></div>
-
+  </div>
   <!-- Footer -->
   <footer>
     <ul>
