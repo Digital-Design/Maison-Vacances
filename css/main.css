@@ -66,6 +66,22 @@ section {
 	padding-bottom: 20px;
 }
 
+@media only screen and (min-width: 1500px) {
+	h1 {
+		font-size: 72px;
+	}
+
+	.fond-bleu h1:before {
+		width: 45px;
+		height: 45px;
+	}
+
+	.fond-blanc h1:before {
+		width: 45px;
+		height: 45px;
+	}
+}
+
 /* --------------------- Nav --------------------- */
 
 .navbar {
@@ -103,10 +119,10 @@ a:focus {
 
 
 .gallery {
-	height: 700px;
+	height: 800px;
 }
 
-.gallery div img {
+.gallery img {
 	margin-top: -15%;
 }
 
@@ -114,7 +130,7 @@ a:focus {
 	.gallery {
 		height: 650px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: -15%;
 	}
 }
@@ -123,7 +139,7 @@ a:focus {
 	.gallery {
 		height: 600px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: -15%;
 	}
 }
@@ -132,7 +148,7 @@ a:focus {
 	.gallery {
 		height: 570px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: -15%;
 	}
 }
@@ -141,7 +157,7 @@ a:focus {
 	.gallery {
 		height: 550px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
@@ -150,7 +166,7 @@ a:focus {
 	.gallery {
 		height: 550px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
@@ -159,7 +175,7 @@ a:focus {
 	.gallery {
 		height: 500px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
@@ -168,7 +184,7 @@ a:focus {
 	.gallery {
 		height: 450px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
@@ -177,7 +193,7 @@ a:focus {
 	.gallery {
 		height: 400px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
@@ -186,7 +202,7 @@ a:focus {
 	.gallery {
 		height: 350px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
@@ -195,7 +211,7 @@ a:focus {
 	.gallery {
 		height: 300px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
@@ -204,18 +220,19 @@ a:focus {
 	.gallery {
 		height: 250px;
 	}
-	.gallery div img {
+	.gallery img {
 		margin-top: 0;
 	}
 }
 
-.gallery div img {
+.gallery img {
 	width: 100%;
 }
 /*.flickity-page-dots {
 	bottom: 10px;
 } Décallage des points
 */
+
 /* --------------------- La Maison --------------------- */
 
 #categorie-maison div .row {
