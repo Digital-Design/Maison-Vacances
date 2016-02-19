@@ -19,9 +19,9 @@
     overflow:auto;
     padding-bottom:50px;
   }
-  footer{
+  .footer{
     position: relative;
-    margin-top: -62px;
+    margin-top: -347px;
     height: 50px;
     clear:both;
   }
@@ -30,16 +30,18 @@
 <body id="categorie-top">
 
   <div id="wrap">
-    <div id="main" class="container clear-top">
+    <div id="main">
       <!-- Nav -->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
+              <span class="sr-only">Menu de navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <!-- Ergo web pour les vieux -->
+              <span style="margin-left: -6px;">Menu</span>
             </button>
             <a class="navbar-brand" href="./">
               <img alt="Brand" src="img/vague_blanc.png" height="25px">
@@ -48,12 +50,12 @@
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active nav-link"><a href="./#categorie-maison">La Maison</a></li>
-              <li class="nav-link"><a href="./#categorie-alentours">Les Alentours</a></li>
-              <li class="nav-link"><a href="./#categorie-contact">Nous Contacter</a></li>
+              <li><a href="./#categorie-maison">La Maison</a></li>
+              <li><a href="./#categorie-alentours">Les Alentours</a></li>
+              <li><a href="./#categorie-contact">Nous Contacter</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="nav-link"><a href="reservation"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
+              <li><a href="reservation"><i class="fa fa-calendar-plus-o"></i> Réserver</a></li>
             </ul>
           </div>
         </div>
@@ -65,20 +67,23 @@
 
       <!-- message 404 -->
       <section class="fond-blanc">
-        <h1><a href="reservation.html">Vous êtes perdu ? <br/>Prenez des vacances. <br/>Rendez vous par ici</a></h1>
+        <h1><a href="reservation.html">Vous êtes perdu ?<br/>Prenez des vacances.<br/>Rendez vous par ici</a></h1>
       </section>
-
-      <!-- google map -->
-      <div id="map"></div>
 
     </div>
   </div>
+
+<div class="footer">
+  <!-- google map -->
+  <div id="map"></div>
+
   <!-- Footer -->
   <footer>
     <ul>
       <li class="pull-left">Site par Digital Design <!-- Ne pas oublier les liens --></li>
     </ul>
   </footer>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
