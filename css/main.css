@@ -512,6 +512,6 @@ footer ul li {
 /* --------------------- Réservation --------------------- */
 
 .day{
-	background-color: #3196DF;
+	background-color: rgba(49,150,223,0.3);
 	color: #fff;
 }
