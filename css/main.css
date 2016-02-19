@@ -111,10 +111,112 @@ a:focus {
 	height: 700px;
 }
 
-.gallery img {
-	width: 100%;
+.gallery div img {
+	margin-top: -15%;
 }
 
+@media only screen and (max-width: 1500px) {
+	.gallery {
+		height: 650px;
+	}
+	.gallery div img {
+		margin-top: -15%;
+	}
+}
+
+@media only screen and (max-width: 1270px) {
+	.gallery {
+		height: 600px;
+	}
+	.gallery div img {
+		margin-top: -15%;
+	}
+}
+
+@media only screen and (max-width: 1170px) {
+	.gallery {
+		height: 570px;
+	}
+	.gallery div img {
+		margin-top: -15%;
+	}
+}
+
+@media only screen and (max-width: 1070px) {
+	.gallery {
+		height: 550px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.gallery {
+		height: 550px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	.gallery {
+		height: 500px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 765px) {
+	.gallery {
+		height: 450px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.gallery {
+		height: 400px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.gallery {
+		height: 350px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.gallery {
+		height: 300px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.gallery {
+		height: 250px;
+	}
+	.gallery div img {
+		margin-top: 0;
+	}
+}
+
+.gallery div img {
+	width: 100%;
+}
 /*.flickity-page-dots {
 	bottom: 10px;
 } Décallage des points
@@ -267,7 +369,7 @@ figure.effect-steve h2,
 figure.effect-steve p {
 	background: #fff;
 	color: #2d434e;
-    cursor: default;
+	cursor: default;
 }
 
 figure.effect-steve h2 {
