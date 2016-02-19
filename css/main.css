@@ -94,18 +94,13 @@ section {
 }
 
 a:focus {
-	outline: 0px !important;
+	outline: 0 !important;
 	color: #fff;
 }
 
 
 /* --------------------- Header --------------------- */
 
-.carousel-inner > .item > img{
-	width:100%;
-	/* en attendant */
-	height: 700px;
-}
 
 .gallery {
 	height: 700px;
