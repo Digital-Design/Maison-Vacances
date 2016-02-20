@@ -248,6 +248,43 @@ label {
 	margin-right: 3px;
 }
 
+.tag {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #3196DF;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 4px 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin: 0 30px 0 0;
+    text-decoration: none;
+}
+ 
+.tag:before {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    content: "";
+    display: inline-block;
+    border-radius: 20px;
+    margin: 0 5px 0 0;
+}
+ 
+.tag:after {
+    display: inline-block;
+    border: 16px solid;
+    border-color: transparent transparent transparent #3196DF;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -32px;
+    top: 0;
+    content: "";
+    display: inline-block;
+}
+ 
+
 /* --------------------- Les Alentours --------------------- */
 
 figure {
