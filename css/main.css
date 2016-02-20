@@ -114,6 +114,10 @@ a:focus {
 	color: #fff;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
 
 /* --------------------- Header --------------------- */
 
@@ -246,6 +250,11 @@ a:focus {
 
 label {
 	margin-right: 3px;
+}
+
+.centreVerticalement {
+	display: flex;
+	align-items: center;
 }
 
 .tag {
