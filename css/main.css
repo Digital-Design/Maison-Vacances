@@ -252,9 +252,8 @@ label {
 	margin-right: 3px;
 }
 
-.centreVerticalement {
-	display: flex;
-	align-items: center;
+#categorie-maison img {
+	margin: 15px 0px;
 }
 
 .tag {
@@ -550,7 +549,6 @@ footer ul {
 }
 
 footer ul li {
-	margin-top: 15px;
 	color: #fff;
 	margin-right: 50px;
 }
