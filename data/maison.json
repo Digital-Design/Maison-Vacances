@@ -1,0 +1,16 @@
+[
+  {
+    "titre":"Titre 1",
+    "description":"test",
+    "image":"maison-1.JPG",
+    "alt":"test",
+    "tags":["tag1","tag2"]
+  },
+  {
+    "titre":"Titre 2",
+    "description":"tesezezt",
+    "image":"maison-2.JPG",
+    "alt":"test",
+    "tags":["tag1","tag2"]
+  }
+]

@@ -13,6 +13,7 @@ Gris Clair : #F8F8F8
 
 body {
 	font-family: Arial;
+	min-width: 500px;
 }
 
 h1 {
@@ -268,7 +269,7 @@ label {
     margin: 0 30px 0 0;
     text-decoration: none;
 }
- 
+
 .tag:before {
     background: #fff;
     width: 10px;
@@ -278,7 +279,7 @@ label {
     border-radius: 20px;
     margin: 0 5px 0 0;
 }
- 
+
 .tag:after {
     display: inline-block;
     border: 16px solid;
@@ -291,7 +292,7 @@ label {
     content: "";
     display: inline-block;
 }
- 
+
 
 /* --------------------- Les Alentours --------------------- */
 

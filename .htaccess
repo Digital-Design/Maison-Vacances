@@ -1,6 +1,8 @@
-ErrorDocument 404 /Maison-Vacances/404.html
+#rewritting
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [QSA]
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+#disable directory browsing
+Options -Indexes
+Redirect /views/ /404
+Redirect /controllers/ /404
