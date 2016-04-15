@@ -45,6 +45,7 @@
   <?php endforeach ?>
   </span>
 <?php endforeach ?>
+  <button type="button" class="btn btn-default" onclick="addItem()">Ajouter</button>
   <button type="submit" class="btn btn-default btn-primary">Valider</button>
 </form>
 

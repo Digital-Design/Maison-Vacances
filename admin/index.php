@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -25,7 +26,7 @@
 
 </head>
 <body>
-
+  <?php ob_start(); ?>
   <div id="wrapper">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -75,7 +76,7 @@
         <!-- User -->
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+            <i class="fa fa-user fa-fw"></i>  <?= $_SESSION['username'] ?> <i class="fa fa-caret-down"></i>
           </a>
           <ul class="dropdown-menu dropdown-user">
             <li><a href="#"><i class="fa fa-user fa-fw"></i> Profil</a>
@@ -83,7 +84,7 @@
             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Paramètres</a>
             </li>
             <li class="divider"></li>
-            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Déconnexion</a>
+            <li><a href="/admin/logout"><i class="fa fa-sign-out fa-fw"></i> Déconnexion</a>
             </li>
           </ul>
         </li>
@@ -98,7 +99,6 @@
             </li>
             <li>
               <a href="#"><i class="fa fa-edit fa-fw"></i> Contenues<span class="fa arrow"></span></a>
-
               <ul class="nav nav-second-level">
                 <?php foreach (glob('../data/*.json') as $data) : ?>
                   <li>
@@ -108,7 +108,10 @@
               </ul>
             </li>
             <li>
-              <a href="/admin/parametres"><i class="fa fa-table fa-fw"></i> Paramètres</a>
+              <a href="/admin/media"><i class="fa fa-picture-o fa-fw"></i> Média</a>
+            </li>
+            <li>
+              <a href="/admin/parametres"><i class="fa fa-cogs fa-fw"></i> Paramètres</a>
             </li>
           </ul>
         </div>
