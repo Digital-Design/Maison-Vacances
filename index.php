@@ -5,7 +5,7 @@
 	<title>Maison de Vacances</title>
 	<meta name="description" content="Nous louons notre maison de vacances.
 	Vous trouverez sur ce site plusieurs informations sur la maison, un formulaire de contact et de réservation et des photos de celle-ci." />
-	<meta name="keywords" content="maison, vacances, reservation, pors-poulhan, pors, poulhan, finistère, pays, bigoudin, mer, plage, pors, grouen, porsgrouen, maisondevacancesbaiedaudierne, baie, audierne, location" />
+	<meta name="keywords" content="maison, vacances, reservation, pors-poulhan, pors, poulhan, finistère, pays, bigoudin, mer, plage, pors, grouen, guen, porsgrouen, porsguen, maisondevacancesbaiedaudierne, baie, audierne, location" />
 	<link rel="icon" type="image/png" href="img/vague_bleu.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=0.7">
 	<link rel="stylesheet" href="css/bootstrap.min.css">

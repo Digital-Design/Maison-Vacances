@@ -1,16 +1,1 @@
-[
-  {
-    "titre":"Titre 1",
-    "description":"test",
-    "image":"maison-1.JPG",
-    "alt":"test",
-    "tags":["tag1","tag2"]
-  },
-  {
-    "titre":"Titre 2",
-    "description":"tesezezt",
-    "image":"maison-2.JPG",
-    "alt":"test",
-    "tags":["tag1","tag2"]
-  }
-]
+[{"titre":"Titre 1a","description":"test","image":"maison-1.JPG","alt":"test","tags":["tag1","tag2sqd"]},{"titre":"Titre 2","description":"tesezezt","image":"maison-2.JPG","alt":"test","tags":["tag1","tag2"]},{"titre":"sdf","description":"xfcgv","image":"cvb","alt":"cvbh","tags":"vgb"}]

@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="css/flickity.css">
 
 <div class="gallery js-flickity" data-flickity-options='{ "imagesLoaded": true,  "setGallerySize": false, "cellAlign": "left" }'>
-	<img src="img/slider-1.JPG" alt="Aremplir" />
-	<img src="img/slider-2.JPG" alt="Aremplir" />
-	<img src="img/slider-3.JPG" alt="Aremplir" />
+	<?php foreach ($slider as $key => $item): ?>
+		<img src="img/<?= $item->image ?>" alt="<?= $item->alt ?>" />
+	<?php endforeach; ?>
 </div>
 
 <!-- Categorie La maison -->
@@ -16,9 +16,13 @@
 					<h2><?= $item->titre ?></h2>
 					<p><?= $item->description ?></p>
 					<p>
-						<?php foreach ($item->tags as $tag): ?>
-							<span href="#" class="tag"><?= $tag ?></span>
-						<?php endforeach; ?>
+						<?php if(is_array($item->tags)) : ?>
+							<?php foreach ($item->tags as $tag): ?>
+								<span href="#" class="tag"><?= $tag ?></span>
+							<?php endforeach; ?>
+						<?php else : ?>
+							<span href="#" class="tag"><?= $item->tags ?></span>
+						<?php endif; ?>
 					</p>
 				</div>
 				<div class="col-md-3 <?php if($key%2) echo "col-md-pull-9" ?>">

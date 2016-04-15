@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /controllers/
+Disallow: /data/
+Disallow: /scripts/
+Disallow: /views/
+Disallow: /router.php

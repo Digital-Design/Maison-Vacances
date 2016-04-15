@@ -1,0 +1,10 @@
+#rewritting
+RewriteEngine on
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?page=$1&params=$2 [QSA]
+
+#disable directory browsing
+Options -Indexes
+Redirect /views/ /404
+Redirect /controllers/ /404
