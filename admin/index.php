@@ -8,16 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  <base href="http://maison-vacances.local/admin/">
   <title>Administration</title>
 
-  <link href="/admin/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/admin/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-  <link href="/admin/css/timeline.css" rel="stylesheet">
-  <link href="/admin/css/sb-admin-2.css" rel="stylesheet">
-  <link href="/admin/bower_components/morrisjs/morris.css" rel="stylesheet">
-  <link href="/admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <script src="/admin/bower_components/jquery/dist/jquery.min.js"></script>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -37,7 +34,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/admin/">Administration</a>
+        <a class="navbar-brand" href=".">Administration</a>
       </div>
 
       <!-- Menu top -->
@@ -52,15 +49,15 @@
               <a href="#">
                 <div>
                   <i class="fa fa-comment fa-fw"></i> Contact
-                  <span class="pull-right text-muted small">4</span>
+                  <span class="pull-right text-muted small">0</span>
                 </div>
               </a>
             </li>
             <li>
               <a href="#">
                 <div>
-                  <i class="fa fa-comment fa-fw"></i> Réservation
-                  <span class="pull-right text-muted small">5</span>
+                  <i class="fa fa-calendar"></i> Réservation
+                  <span class="pull-right text-muted small">0</span>
                 </div>
               </a>
             </li>
@@ -84,7 +81,7 @@
             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Paramètres</a>
             </li>
             <li class="divider"></li>
-            <li><a href="/admin/logout"><i class="fa fa-sign-out fa-fw"></i> Déconnexion</a>
+            <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i> Déconnexion</a>
             </li>
           </ul>
         </li>
@@ -95,23 +92,23 @@
         <div class="sidebar-nav navbar-collapse">
           <ul class="nav" id="side-menu">
             <li>
-              <a href="/admin/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+              <a href="."><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <li>
               <a href="#"><i class="fa fa-edit fa-fw"></i> Contenues<span class="fa arrow"></span></a>
               <ul class="nav nav-second-level">
                 <?php foreach (glob('../data/*.json') as $data) : ?>
                   <li>
-                    <a href="/admin/edit/<?= split(".json",basename($data))[0] ?>"><?= ucfirst(split(".json",basename($data))[0]) ?></a>
+                    <a href="edit/<?= split(".json",basename($data))[0] ?>"><?= ucfirst(split(".json",basename($data))[0]) ?></a>
                   </li>
                 <? endforeach; ?>
               </ul>
             </li>
             <li>
-              <a href="/admin/media"><i class="fa fa-picture-o fa-fw"></i> Média</a>
+              <a href="media"><i class="fa fa-picture-o fa-fw"></i> Média</a>
             </li>
             <li>
-              <a href="/admin/parametres"><i class="fa fa-cogs fa-fw"></i> Paramètres</a>
+              <a href="parametres"><i class="fa fa-cogs fa-fw"></i> Paramètres</a>
             </li>
           </ul>
         </div>
@@ -124,11 +121,8 @@
 
   </div>
 
-  <script src="/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/admin/bower_components/metisMenu/dist/metisMenu.min.js"></script>
-  <script src="/admin/bower_components/raphael/raphael-min.js"></script>
-  <script src="/admin/bower_components/morrisjs/morris.min.js"></script>
-  <script src="/admin/js/morris-data.js"></script>
-  <script src="/admin/js/sb-admin-2.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="js/sb-admin-2.js"></script>
 </body>
 </html>

@@ -16,17 +16,18 @@
 
 <form action="/admin/edit/<?= split('.json', basename($file))[0] ?>" method="POST">
 <?php foreach ($data as $key => $item): ?>
-  <span class="item">
+  <span class="item" id="<?= $key ?>">
   <h2>Item <?= $key ?></h2>
   <?php foreach ($item as $params => $value): ?>
     <div class="form-group">
       <label><?= ucfirst($params) ?> <?php if($key == 0) echo '*' ?></label>
       <?php if(is_array($value)): ?>
+        <button type="button" class="btn btn-default" onclick="addInput(<?= $key ?>, '<?= $params ?>')">Ajouter</button>
         <?php foreach ($value as $value_key => $val): ?>
           <input
           type="text"
-          class="form-control"
-          name="item[<?= $key ?>][<?= $params ?>][<?= $value_key ?>]"
+          class="form-control <?= $params ?>"
+          name="item[<?= $key ?>][<?= $params ?>][]"
           value="<?= $val ?>"
           placeholder="<?= $params ?>"
           <?php if($key == 0) echo 'required="true"' ?>>
@@ -65,5 +66,14 @@
       $(this).html($(this).html().split(" *")[0]);
     });
     clone.appendTo('.item:last');
+  }
+
+  function addInput(id, input){
+    var clone = $('.'+input+':first').clone();
+    clone.val('');
+    clone.html(clone.html()+'<br/>');
+    clone.removeAttr('required');
+    clone.attr("name",'item['+id+']['+input+'][]');
+    clone.appendTo('#'+id+'');
   }
 </script>
