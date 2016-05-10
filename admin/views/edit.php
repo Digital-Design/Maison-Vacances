@@ -30,7 +30,7 @@
           name="item[<?= $key ?>][<?= $params ?>][]"
           value="<?= $val ?>"
           placeholder="<?= $params ?>"
-          <?php if($key == 0) echo 'required="true"' ?>>
+          <?php if($value_key == 0) echo 'required="true"' ?>>
           <br/>
         <?php endforeach ?>
       <?php else : ?>
