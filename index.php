@@ -57,7 +57,7 @@
 	<!-- Footer -->
 	<footer>
 		<ul>
-			<li class="pull-right" style="margin-top: 10px;"><a href="http://isenclub.fr/digitaldesign/" style="color:white;" target="_blank"><img src="http://isenclub.fr/digitaldesign/img/favicon.png" alt="logo" width="40">Création Digital Design</a></li>
+			<li class="pull-right" style="margin-top: 10px;"><a href="http://digitaldesign.isenclub.fr/" style="color:white;" target="_blank"><img src="http://digitaldesign.isenclub.fr/img/favicon.png" alt="logo" width="40">Création Digital Design</a></li>
 		</ul>
 	</footer>
 </body>
