@@ -12,7 +12,7 @@ if($file = glob('../data/'.$_GET['params'].'.json')[0]) {
         $data[$key] = new stdClass();
         foreach ($item as $params => $value) {
           if(is_array($value))
-            $value = array_filter($value);
+            $value = array_values(array_filter($value));
           $data[$key]->$params = $value;
         }
       }
